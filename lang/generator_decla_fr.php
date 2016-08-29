@@ -20,5 +20,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// S
 	'site_parodique' => 'Site parodique réalisé par',
 	'site_propulser' => 'Site propulsé par <a href="http://www.spip.net">SPIP</a>',
+	'sur_github' => 'Source',
 
 );
