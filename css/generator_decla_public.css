@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900");
+
+@media all {
+	html {
+		font-size: 14px;
+		margin:0 2em
+	}
+	body {
+		font-family: "Source Sans Pro";
+		margin:3em auto;
+		max-width:800px
+	}
+	header, main, section, footer { display:block }
+	main {
+		background: rgba(32, 47, 85, 0.8) none repeat scroll 0 0;
+		margin:3em auto;
+		padding: 2em
+	}
+	img.main_fond {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		left: 50%;
+		min-height: 100%;
+		min-width: 100%;
+		position: fixed;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1
+	}
+	body {
+		color: #fff;
+		overflow: auto;
+		right: 0
+	}
+	body::after, body::before { 
+		background: rgba(0, 0, 0, 0) url("../prive/themes/spip/images/flag.svg") no-repeat scroll 0 0 / 100% auto; 
+		height: 4px;
+		left: 50%;
+		overflow: hidden;
+		position: fixed;
+		transform: translate(-50%, 0px)
+	}
+	body, body::before {
+		top: 0;
+	}
+	body, body::after {
+		bottom: 0;
+	}
+	body::after, body::before {
+		content: "";
+		width: 100%
+	}
+	h1 { display: none }
+	h2 {
+		color: #fff;
+		font-size: 40px;
+		font-weight: 900;
+		margin: 0
+	}
+	h3 {
+		font-size: 30px;
+		font-weight: 800;
+	}
+	section {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.33333;
+		position: relative
+	}
+	footer {
+		background: rgba(32, 47, 85, 0.8) none repeat scroll 0 0;
+		padding: 1em;
+		text-align: right
+	}
+	p { line-height: 1 }
+	.slogan { 
+		background-color:rgba(255, 255, 255, 0.5);
+		margin: 0 -50px;
+		padding: 1em 3em;
+		text-align: center
+	}
+	.premier_mot { 
+		display: block; 
+		font-size: 50px;
+		font-weight: 1000;
+	}
+	.boutons,
+	.button_caption { 
+		border-top: 1px solid #fff;
+		padding: 1em 0;
+		text-align: center
+	}
+	.button_generator { padding-bottom: 1em }
+	input[type="submit"],
+	.button {
+		background-color: #3695ff;
+		border-color: #3695ff;
+		border-radius: 0;
+		color: #fff;
+		font-size: 18px;
+		line-height: 1.33333;
+		padding: 10px 16px;
+		text-decoration: none;
+		text-transform: uppercase
+	}
+	.button:hover {
+		background-color: #006ee8;
+		color: #fff
+	}
+	.button_partage {
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+		border: 1px solid #fff;
+		color: #fff;
+		cursor: hand;
+		text-align: center;
+		text-decoration: none
+	}
+	a { color: #3695ff }
+	a:hover,
+	a:focus,
+	a:active {
+		color:#006ee8
+	}
+	a:focus {
+		border:1px solid #fff;
+		color: #fff
+	}
+	.none { display: none }
+}
+@media print {
+	a { color: #3695ff; }
+	body {background-color: #ffffff}
+}

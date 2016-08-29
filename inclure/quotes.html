@@ -1,0 +1,13 @@
+	#CACHE{0}
+	<B_article>
+		<BOUCLE_article(ARTICLES){par hasard}{0,1}>
+			<h3>#TITRE</h3>
+			#TEXTE
+			#INCLURE{fond=inclure/actions, id_article}
+		</BOUCLE_article>
+	</B_article>
+		<h3>Aucune déclaration n'a été trouvé, mais on va en trouver une quand même.</h3>
+		<p>La France condamne que vous n'ayez pas réussi à générer une nouvelle déclaration, le centre de crise vient d'être ouvert rien que pour vous.</p> 
+		<p>Nous vous attendons au 37 Quai d'Orsay - dans le 7ème arrondissement de Paris.</p>
+		#INCLURE{fond=inclure/actions, env}
+	<//B_article>

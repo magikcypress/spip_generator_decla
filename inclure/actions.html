@@ -1,0 +1,21 @@
+[(#SET{url_twitter, https://twitter.com/intent/tweet})]
+[(#SET{url_facebook, https://www.facebook.com/sharer/sharer.php})]
+<BOUCLE_article(ARTICLES){id_article}>
+	[(#SET{titre, #TITRE})]
+	[(#SET{url_article, #URL_ARTICLE|url_absolue})]
+</BOUCLE_article>
+<div class="button_caption">
+	<div class="button_generator">
+		<a href="[(#URL_SITE_SPIP)]" alt="<:generator_decla:generer_declaration:>" class="button ajax"><:generator_decla:generer_declaration:></a>
+	</div>
+
+	<B_condition>
+	<BOUCLE_condition(CONDITION){si #GET{url_article}}>
+		<a href="[(#GET{url_twitter}|parametre_url{text, #GET{titre}}|parametre_url{url, #GET{url_article}})]" title="<:generator_decla:generer_declaration:> Twitter" class="button_partage" target="_blank"><i class="fa fa-fw fa-twitter"></i><span class="none">Twitter</span></a>
+		<a href="[(#GET{url_facebook}|parametre_url{u, #GET{url_article}})]" title="<:generator_decla:partager:> Facebook" class="button_partage" target="_blank"><i class="fa fa-fw fa-facebook"></i> <span class="none">Facebook</span></a>
+	</BOUCLE_condition>
+	</B_condition>
+		<a href="[(#GET{url_twitter}|parametre_url{text, #SLOGAN_SITE_SPIP}|parametre_url{url, #URL_SITE_SPIP})]" title="<:generator_decla:generer_declaration:> Twitter" class="button_partage" target="_blank"><i class="fa fa-fw fa-twitter"></i><span class="none">Twitter</span></a>
+		<a href="[(#GET{url_facebook}|parametre_url{u, #URL_SITE_SPIP})]" title="<:generator_decla:partager:> Facebook" class="button_partage" target="_blank"><i class="fa fa-fw fa-facebook"></i> <span class="none">Facebook</span></a>
+	<//B_condition>
+</div>
