@@ -13,6 +13,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// I
 	'image' => 'Image',
+	'inspiration_morano' => 'Le design de ce site est inspiré de',
 
 	// p
 	'partager' => 'Partager sur',
