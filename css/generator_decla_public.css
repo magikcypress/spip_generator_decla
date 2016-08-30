@@ -97,9 +97,9 @@
 	input[type="submit"],
 	.button {
 		background-color: #3695ff;
-		border-color: #3695ff;
-		border-radius: 0;
+		border: 0 none;
 		color: #fff;
+    		font-weight: 700;
 		font-size: 18px;
 		line-height: 1.33333;
 		padding: 10px 16px;
@@ -128,6 +128,7 @@
 		border:1px solid #fff;
 		color: #fff
 	}
+	a.link_slogan { display: inline-block; text-decoration: none }
 	.none { display: none }
 }
 @media print {
