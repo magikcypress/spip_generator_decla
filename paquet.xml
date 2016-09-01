@@ -17,4 +17,6 @@
 
 	<necessite nom="Zcore" />
 
+	<pipeline nom="compagnon_messages" inclure="generator_decla_pipelines.php" />
+
 </paquet>

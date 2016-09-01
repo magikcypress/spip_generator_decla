@@ -1,0 +1,12 @@
+#BOITE_OUVRIR{#GET{titre},compagnon}
+
+<h3><:generator_decla:c_ecrire_une_decla_titre:></h3>
+<p><:generator_decla:c_ecrire_une_decla_texte1:></p>
+<p><:generator_decla:c_ecrire_une_decla_texte2:></p>
+<p><:generator_decla:c_ecrire_une_decla_texte3:></p>
+<p><:generator_decla:c_ecrire_une_decla_texte4:></p>
+
+#BOITE_PIED
+	<span class="target" data-target="#bando1_menu_accueil"></span>
+	[(#BOUTON_ACTION{[(#VAL|ok_aleatoire)],#URL_ACTION_AUTEUR{generator_decla,compris/#ID,#SELF|parametre_url{fermer,oui}},ajax})]
+#BOITE_FERMER
