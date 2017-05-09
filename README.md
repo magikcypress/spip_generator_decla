@@ -3,7 +3,7 @@ SPIP Générateur de déclaration
 
 Ce plugin permet de générer des déclarations en modéle avec celle du ministère des Affaires étrangères, mais en plus fun. 
 
-http://www.generatervotredeclaration.com
+http://www.generervotredeclaration.com/
 
 Ce site est un site parodique.
 
