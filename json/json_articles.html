@@ -1,0 +1,11 @@
+#HTTP_HEADER{Content-Type: application/json; charset=#CHARSET}
+[
+	<BOUCLE_articles(ARTICLES){tout}{","}>
+	{
+	"id_article": #ID_ARTICLE,
+	"title":[(#TITRE*|extraire_multi|supprimer_numero|json_encode)],
+	"texte":"[(#TEXTE*|json_encode)]",
+	}
+	</BOUCLE_articles>
+]
+#FILTRE{trim}
